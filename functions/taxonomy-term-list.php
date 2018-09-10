@@ -1,5 +1,5 @@
 <?php
-// comma separated list of terms for resource type
+// comma separated list of taxonomy terms
 function jn_resource_type_terms() {
 	$rt_terms = get_the_terms( get_the_ID() , 'YOUR_TAXONOMY_TERM' );
 	if ( ! empty( $rt_terms ) ) {
