@@ -18,4 +18,15 @@ function my_login_logo()
 }
 add_action('login_enqueue_scripts', 'my_login_logo');
 
+
+// Custom login logo link
+// replaces default link to wordpress
+
+add_filter('login_headerurl', 'custom_loginlogo_url');
+function custom_loginlogo_url($url)
+{
+    return '/';
+}
+
+
  ?>
